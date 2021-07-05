@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import React from "react";
+import Updatedata from "./updateform";
+import "./App.css";
+import Stutable from "./table";
 
 function App() {
+  const [mydata, setdata] = useState([]);
+  const [loading, isload] = useState(true);
+
+  const deletedata = async (val) => {
+    await axios.delete(`http://localhost:8000/funcview/studentapi/${val}`);
+    fetchData();
+  };
+
+  const fetchData = async () => {
+    isload(true);
+    const result = await axios.get("http://localhost:8000/funcview/studentapi");
+    setdata(result.data);
+    if (result) isload(false);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <Updatedata fetchagain={fetchData} />
+        <Stutable mydata={mydata} loading={loading} deletedata={deletedata} />
+      </div>
+    </>
   );
 }
 

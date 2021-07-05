@@ -1,0 +1,46 @@
+.filterboxdropdown{
+    height: 168px;
+    width: 500px;
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px ;
+    margin-top: 12px;
+    max-height: calc(100vh - 220px) ;
+    overflow: hidden auto ;
+    padding: 16px 32px;
+    position: absolute;
+    left: 0;
+    top: 64px;
+}
+
+.flexibleSearchArrow{
+    height: 25px;
+    transform: rotate(261deg);
+}
+
+.filterboxdropdown p{
+    margin-right: auto;
+    text-transform: uppercase ;
+    font-size: 12px ;
+    line-height: 12px ;
+    font-weight: 800 ;
+}
+
+.filterboxalllocation{
+    width: 468px;
+    height: 58px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 24px !important;
+    margin-top: 8px !important;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px !important;
+    align-items: center;
+    color: blue;
+}

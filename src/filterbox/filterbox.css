@@ -1,0 +1,169 @@
+.filterContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 120px;
+}
+.filterbox{
+    display: flex;
+    background-color: white;
+    max-width: 848px;
+    height: 66px;
+    align-items: center;
+    width: 70%;
+    border-radius: 50px;
+    justify-content: space-around;
+    position: relative;
+    animation: fade-in 0.3s;
+}
+
+.react-calendar button {
+    background-color: white;
+    margin: 0;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    border: 0;
+    outline: none;
+}
+
+.filterEnabled{
+    background-color: #f3ededa1;
+    border: 1px solid #e2d6d6;;
+}
+.showfilterboxSelected{
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(39 39 39 / 3%), 0px 4px 12px rgb(41 37 37 / 54%) !important;
+    border: 3px solid transparent;
+}
+
+.hidefilterbox{
+    position: inline;
+    
+}
+
+.stretchSearch{
+    width: 170px !important;
+}
+
+.showfilterbox{
+    position: absolute;
+    
+}
+.locationInputField{
+    outline: none;
+    border: none;
+    width: 82px;
+    background-color: transparent !important 
+}
+
+.locationInputField:hover{
+    background-color: #EBEBEB 
+}
+
+.showfilterboxSelected:hover{
+    background-color: white;
+}
+
+
+
+.pointerSpace , .datefiltercontainer{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 22px;
+    display: flex;
+    height: inherit;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;
+    
+} 
+
+.datefiltercontainer{
+    padding: 0;
+}
+
+.filterSearch{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    background-color: #FF385C;
+    width: 36px;
+    margin: 9px;
+    padding: 24px;
+    height: 48px;
+    cursor: pointer;
+    border:none;
+    transition: width 0.3s ease-out;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.hoverEffect:hover{
+    background-color: #EBEBEB 
+}
+
+.react-date-picker__button , .react-date-picker__inputGroup{
+    display: none;
+}
+
+.react-calendar{
+    border-radius: 23px !important;
+    width: 372px !important;
+    padding: 12px;
+    border: none !important;
+    height: 289px;
+    max-width: 200%;
+    border-radius: 32px !important;
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px !important;
+}
+
+.react-date-picker {
+    position: absolute !important;
+    top: 70px;
+}
+
+.pointerSpace p{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.pointerSpace p span:first-child{
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.pointerSpace p span{
+    line-height: 18px;
+}
+
+.vl {
+    border-left: 1px solid #d6c5c5;
+    height: 31px;
+  }
+
+.just-hide{
+    display: none;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

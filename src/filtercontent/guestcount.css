@@ -1,0 +1,53 @@
+.filterGuestContainer{
+    background: rgb(255, 255, 255) ;
+    border-radius: 32px ;
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px ;
+    margin-top: 12px ;
+    max-height: calc(100vh - 220px) ;
+    overflow: hidden auto ;
+    padding: 16px 32px ;
+    max-width: 394px;
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 394px;
+}
+
+.guestList{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 4px 14px 0px;
+}
+
+hr{
+    border: 1px solid #e2d4d4c7;
+}
+
+.guestList p{
+    font-weight: 600;
+    color: black;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 16px;
+}
+
+.counterButtons{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid #d6bfbf;
+    background-color: white;
+    margin: 0 17px;
+    font-size: 25px;
+}
