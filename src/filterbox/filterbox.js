@@ -141,10 +141,8 @@ const Filterbox = (props) => {
               }}
             >
               <p>
-                <span>Date</span>
-                <span>{`${startDate.getDate()} ${
-                  MONTHS[startDate.getMonth() + 1]
-                }`}</span>
+                <span>Check in</span>
+                <span>{`${startDate.getDate() === new Date().getDate() ? "Add date" : String(startDate.getDate()) + MONTHS[startDate.getMonth() + 1]}`}</span>
               </p>
             </div>
             <Datepicker
@@ -169,10 +167,8 @@ const Filterbox = (props) => {
             }}
           >
             <p>
-              <span>Date</span>
-              <span>{`${endDate.getDate()} ${
-                MONTHS[endDate.getMonth() + 1]
-              }`}</span>
+              <span>Check out</span>
+              <span>{`${endDate.getDate() === new Date().getDate() ? "Add date" : String(endDate.getDate()) + MONTHS[endDate.getMonth() + 1]}`}</span>
             </p>
           </div>
           <div className="vl"></div>

@@ -27,7 +27,7 @@
     border-radius: 30px;
     padding: 6px;
     display: flex;
-    width: 400px;
+    width: 800px;
     height: 60px;
     align-items: center !important;
     background-color: #FFFFFF !important;
@@ -37,8 +37,10 @@
     box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%) !important;
     color: #222222 !important;
     cursor: pointer;
-    transition: width 90ms;
+    transition: width 1s;
     animation: fade-in 0.6s;
+    transform-origin: 0% 0% !important;
+    transition: transform 200ms ease 0s, opacity 20ms ease 20ms, pointer-events 0ms ease 150ms !important;
 }
 .search-text{
     color: black;
@@ -77,12 +79,21 @@
     height: 123px !important;
 }
 .hide-search{
-    display: none;
+    visibility: hidden;
+    transform: scale(1.2, 1.37) translate(-60px, 52px);
+    position: absolute;
+}
+
+.hide-search-button{
+    visibility: hidden;
+    transform: scale(2.5, 1.375) translate(-90px, 122px)
 }
 
 .just-hide{
     display: none;
 }
+
+
 
 .show-search{
     width: 293px;

@@ -13,9 +13,10 @@ code {
     monospace;
 }
 
-.scroll{
-  min-height: 1000px;
+body{
+  overflow: scroll;
 }
+
 
 .scroll img{
   width: 100%;

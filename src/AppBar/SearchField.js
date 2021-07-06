@@ -5,7 +5,7 @@ const Searchfield = (props) => {
             className={`search-navbar  ${
               !props.showfilter ? "show-search" : "hide-search"
             } ${
-                props.hidenavbar ? "just-hide" : ""
+                props.hidenavbar ? "hide-search-button" : ""
               }`}
             type="button"
             onClick={() => {
