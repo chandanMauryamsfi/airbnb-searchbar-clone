@@ -1,7 +1,7 @@
 import "./navbar.css";
 import { useState, useEffect } from "react";
 import Filterbox from "../filterbox/filterbox";
-import Searchfield from "./SearchField"
+import Searchfield from "./SearchField";
 
 const Appbar = () => {
   const [hidenavbar, sethidenav] = useState(true);
@@ -15,8 +15,8 @@ const Appbar = () => {
         sethidenav(false);
       }
 
-      if(showfilter){
-        setshowfilter(false)
+      if (showfilter) {
+        setshowfilter(false);
       }
     }
     window.addEventListener("scroll", onScroll);
@@ -29,31 +29,16 @@ const Appbar = () => {
           showfilter ? "appbar-height" : ""
         }`}
       >
-        <div className="navItems">
-        <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/airbnb-logo_1.png"  alt="Airbnb Logo" />
-        
-        <div>
-        <h4>Become a host</h4>
-        </div>
-        </div>
-        {/* {showfilter || hidenavbar ? (
-          <Filterbox abs={hidenavbar ? true : false} 
-          showfilter={showfilter}/>
-        ) : (
-          <Searchfield
-          showfilter={showfilter}
-          setshowfilter={setshowfilter}/>
-        )} */}
-        
-         <Filterbox abs={hidenavbar ? true : false} 
+        <Filterbox
+          abs={hidenavbar ? true : false}
           showfilter={showfilter}
           hidenavbar={hidenavbar}
-          />
+        />
         <Searchfield
           showfilter={showfilter}
           setshowfilter={setshowfilter}
-          hidenavbar={hidenavbar}/>
-         
+          hidenavbar={hidenavbar}
+        />
       </div>
     </>
   );
